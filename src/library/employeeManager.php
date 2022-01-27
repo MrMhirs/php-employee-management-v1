@@ -23,7 +23,7 @@ function deleteEmployee(string $id)
     unset($json); //prevent memory leaks for large json
 
     $deleted = false;
-        for ($i=0; $i < count($data); $i++) { 
+        for ($i=0; $i < count($data); $i++) {
             if(intval($id) == $data[$i]["id"] ){
                 unset($data[$i]);
                 $deleted = true;
@@ -69,10 +69,10 @@ function removeAvatar($id)
 // TODO implement it
 }
 
-function getQueryStringParameters(): array
-{
-// TODO implement it
-}
+// function getQueryStringParameters(): array
+// {
+// // TODO implement it
+// }
 
 function getNextIdentifier(array $employeesCollection): int
 {
